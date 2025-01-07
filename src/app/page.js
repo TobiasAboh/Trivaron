@@ -1,101 +1,136 @@
 import Image from "next/image";
 
+import BlogCard from "./components/blogcard";
+
+const Card = (props) => {
+  const { title, image } = props;
+  return (
+    <a
+      href="#"
+      className="flex flex-col relative justify-end bg-cover w-48 h-48 rounded-2xl text-white p-2 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:scale-105"
+      style={{ backgroundImage: image }}
+    >
+      <Image
+        src="/redirecticon.png"
+        className="absolute top-2 sm:top-4 right-2 sm:right-4"
+        alt="visit"
+        width={50}
+        height={50}
+      />
+      {title}
+    </a>
+  );
+};
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+    <>
+      <div
+        className="bg-cover bg-center h-screen pt-24"
+        style={{ backgroundImage: "url('/herobg_upscaled.jpg')" }}
+      >
+        <div className="flex flex-col ml-36">
+          <Image
+            className="pb-10"
+            src="/trivaronlogo2.png"
+            alt="Trivaron Logo"
+            width={150}
+            height={100}
+          />
+          <div className="flex gap-4 pb-10">
+            <Card title="Agriculture" image="url('/cocoa.png')" />
+            <Card title="Energy" image="url('/energy.png')" />
+            <Card title="Real Estate" image="url('/realestate.png')" />
+          </div>
+          <div className="flex gap-10">
+            <button className="flex gap-6 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full items-center">
+              <Image
+                src="/requestqoute.png"
+                alt="request quote"
+                width={25}
+                height={25}
+              />
+              Request a quote
+            </button>
+            <button className="flex gap-6 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full items-center">
+              <Image
+                src="/learnmoreicon.png"
+                alt="request quote"
+                width={25}
+                height={25}
+              />
+              Learn More
+            </button>
+          </div>
+        </div>
+        <h1 className="text-center font-bold text-5xl mt-20">Partners</h1>
+        <img src="partners.svg" alt="Description of the SVG" />
+        <h1 className="text-center font-bold text-5xl mt-10">
+          A Little Bit <span className="text-blue-400">About Us</span>
+        </h1>
+        <div className="flex flex-col items-center justify-center mt-6 text-gray-500">
+          <p>
+            We expertise in energy and agriculture, offering innovative
+            solutions for the oil and gas
+          </p>
+          <p>
+            industry alongside sustainable farming practices. From cutting-edge
+            energy support to
+          </p>
+          <p>
+            smart, eco-friendly agriculture, we are comitted to driving
+            innovation and building a
+          </p>
+          <p>sustainable future</p>
+        </div>
+        <img src="homepagedesign.svg" alt="ornaments" className="w-screen" />
+        <h1 className="font-bold text-5xl mt-10 ml-36">News Updates</h1>
+        <div className="flex gap-80 mt-4 ml-36">
+          <div>
+            <p>Explore our latest updates, insights, and breakthroughs in</p>
+            <p>agriculture and energy.</p>
+          </div>
+          <a href="#" className="text-green-400 underline">
+            See all
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="flex gap-10 mt-10 ml-36">
+          <BlogCard
+            title="How to grow your own organic produce"
+            image="/testimage.svg"
+            description="Learn how to grow your own organic produce using sustainable farming practices."
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <BlogCard
+            title="The future of renewable energy"
+            image="/testimage.svg"
+            description="Discover the latest developments in renewable energy and how they can benefit your business."
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        </div>
+        <div
+          className="bg-black bg-cover bg-center h-screen mt-10 pt-40"
+          style={{ backgroundImage: "url('/crops.svg')" }}
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <h1 className=" flex flex-col items-center text-white font-bold text-5xl">
+            Reach out to Trivaron today <span>to be part of the change</span>
+          </h1>
+          <p className="flex flex-col items-center text-gray-200 mt-6">
+            Join us in fostering a sustainable future in agriculture. Whether
+            you are a supplier,
+            <span>
+              partner, or supporter, we're excited to connect with you
+            </span>
+          </p>
+          <button className="flex gap-6 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full items-center mx-auto mt-10">
+            <Image
+              src="/requestqoute.png"
+              alt="request quote"
+              width={25}
+              height={25}
+            />
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
