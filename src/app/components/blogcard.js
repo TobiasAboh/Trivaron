@@ -2,7 +2,7 @@
 export default function BlogCard(props) {
   const { title, image, description } = props;
   return (
-    <div className="flex flex-col bg-white shadow-2xl rounded-2xl p-4 max-w-md min-h-xl mx-5 md:mx-0 border-2 border-gray-300">
+    <div className="flex flex-col bg-white rounded-2xl p-4 max-w-md min-h-xl mx-5 md:mx-0 border-2 border-gray-300">
       <img
         src={image}
         alt="blog image"

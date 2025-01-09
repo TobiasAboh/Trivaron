@@ -18,12 +18,12 @@ export default function Footer() {
           are a supplier,
           <span>partner, or supporter, we're excited to connect with you</span>
         </p>
-        <button className="flex gap-6 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full items-center mx-auto mt-10">
+        <button className="flex items-center gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10">
           <Image
             src="/requestqoute.png"
             alt="request quote"
-            width={25}
-            height={25}
+            width={20}
+            height={20}
           />
           Contact Us
         </button>
@@ -62,7 +62,7 @@ export default function Footer() {
               <p className="pb-3 border-b-2 border-white-300 text-gray-300">
                 Quik Link
               </p>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
               <a href="#">About</a>
               <a href="#">Services</a>
               <a href="#">Blog</a>

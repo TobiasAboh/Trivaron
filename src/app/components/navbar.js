@@ -27,7 +27,7 @@ export default function Navbar() {
             </li>
             <li className={navStyle}>
               <a href="/" className={textStyle}>
-                Blogs
+                News
               </a>
             </li>
             <li className={navStyle}>
