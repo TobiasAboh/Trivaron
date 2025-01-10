@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function HeroSection(){
+export default function HeroSection() {
   return (
     <section className="relative h-screen">
       <Image
@@ -34,4 +34,4 @@ export default function HeroSection(){
       </div>
     </section>
   );
-};
+}
