@@ -8,12 +8,13 @@ export default function Navbar() {
   const textStyle = "text-black text-sm";
   return (
     <>
-      <div className="flex bg-white space-x-60 lg:space-x-72 justify-start items-center pl-4 lg:pl-20 py-3 shadow-2xl relative z-50">
-        <Image
-          src="/trivaronlogo.png"
+      <div className="flex bg-white justify-between items-center px-4 lg:pl-20 py-3 shadow-2xl relative z-50">
+        <img
+          src="/trivaronlogo5.svg"
           alt="Trivaron Logo"
-          width={50}
-          height={50}
+          // width={150}
+          // height={50}
+          className="w-15 h-10"
         />
         <div className="md:hidden">
           <button
@@ -71,12 +72,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className={navStyle}>
-              <a href="/" className={textStyle}>
-                About
-              </a>
-            </li>
-            <li className={navStyle}>
-              <a href="/" className={textStyle}>
+              <a href="/blog" className={textStyle}>
                 News
               </a>
             </li>
@@ -87,9 +83,9 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        {/* <button className="bg-black px-5 py-2 text-white rounded-3xl">
+        <button className="hidden md:inline bg-black px-5 py-2 text-white rounded-3xl">
           Learn more
-        </button> */}
+        </button>
       </div>
     </>
   );

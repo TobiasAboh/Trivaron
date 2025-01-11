@@ -8,12 +8,12 @@ import BlogSection from "../components/blogsection";
 
 export default function Agriculture() {
   return (
-    <div>
+    <>
       <HeroSection />
       <Section1 />
       <Section2 />
       <Section3 />
       <BlogSection />
-    </div>
+    </>
   );
 }

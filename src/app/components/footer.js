@@ -20,12 +20,12 @@ export default function Footer() {
           <h1 className=" flex flex-col items-center mt-36 md:mt-0 text-white font-bold text-xl md:text-5xl">
             Reach out to Trivaron today <span>to be part of the change</span>
           </h1>
-          <p className="flex flex-col mx-auto text-center items-center text-lg text-gray-200 mt-6">
+          <p className="flex flex-col mx-auto text-center items-center text-md md:text-lg text-gray-200 mt-6">
             Join us in fostering a sustainable future in agriculture. Whether
             you are a supplier,
-            <span>
-              partner, or supporter, we're excited to connect with you
-            </span>
+            <br className="hidden md:block" />
+            <br className="block md:hidden" />
+            partner, or supporter, we're excited<br className="block md:hidden" />{" "}to connect with you
           </p>
           <button className="flex items-center mb-36 md:mb-0 gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10">
             <Image
@@ -73,17 +73,29 @@ export default function Footer() {
                 <p className="pb-3 border-b-2 border-white-300 text-gray-300">
                   Quick Links
                 </p>
-                <a href="/" className="hover:text-green-400">Home</a>
-                <a href="#" className="hover:text-green-400">About</a>
-                <a href="#" className="hover:text-green-400">Services</a>
-                <a href="#" className="hover:text-green-400">News</a>
-                <a href="#" className="hover:text-green-400">Contact</a>
+                <a href="/" className="hover:text-green-400">
+                  Home
+                </a>
+                <a href="#" className="hover:text-green-400">
+                  About
+                </a>
+                <a href="#" className="hover:text-green-400">
+                  Services
+                </a>
+                <a href="#" className="hover:text-green-400">
+                  News
+                </a>
+                <a href="#" className="hover:text-green-400">
+                  Contact
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div className=" flex flex-col-reverse items-start mx-auto md:flex-row md:justify-between mt-20 pt-2  w-5/6 md:ml-20 border-t-2 border-gray-300 text-gray-300">
-          <p className="mt-2 md:mt-0">Copyrights@ 2025 Trivaron. All rights reserved</p>
+          <p className="mt-2 md:mt-0">
+            Copyrights@ 2025 Trivaron. All rights reserved
+          </p>
           <div className="flex flex-col md:flex-row items-center gap-2">
             <p>Follow Us</p>
             <div className="flex gap-5 md:gap-2">
