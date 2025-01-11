@@ -30,21 +30,35 @@ const TiltedCardLayout = () => {
 
 export default function Section3() {
   return (
-    <section className="relative h-auto w-screen mt-28">
-      <div className="flex space-x-20">
-        <div>
-          <Image src="/oilrig6.jpg" alt="oi rig" width={600} height={500} />
+    <section className="relative h-auto mt-28">
+      <div className="flex flex-col-reverse md:flex-row md:space-x-20">
+        <div className="w-3/4 md:w-5/6">
+          <Image
+            src="/oilrig6.jpg"
+            alt="oil rig"
+            width={600}
+            height={500}
+            className="w-full h-full"
+          />
         </div>
-        <div>
-          <h1 className="text-5xl font-bold">Oil and Gas Services</h1>
-          <p className="text-2xl mt-4">
-            As trusted oil and gas company, we offer a<br />
-            complete suite of onshore and offshore services,
-            <br />
-            including:
-          </p>
+        <div className="w-full flex flex-col items-center">
+          <div>
+            <h1 className="text-3xl md:text-5xl font-bold">
+              Oil and Gas Services
+            </h1>
+            <p className="text-sm md:text-xl mt-4">
+              As trusted oil and gas company, we offer a<br />
+              complete suite of onshore and offshore services,
+              <br />
+              including:
+            </p>
+          </div>
+
           <TiltedCardLayout />
         </div>
+      </div>
+      <div className="flex mt-16">
+        <Image src="/partners3.png" alt="partners" width={500} height={300} className="mx-auto"/>
       </div>
     </section>
   );

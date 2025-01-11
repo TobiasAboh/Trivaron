@@ -47,16 +47,13 @@ export default function Navbar() {
           </button>
         </div>
         {isOpen && (
-          <div className="absolute top-full left-0 md:hidden bg-white shadow-md">
-            <div className="space-y-2 px-4 py-2">
+          <div className="absolute w-full top-full right-0 md:hidden bg-white shadow-md">
+            <div className="w-full space-y-2 px-4 py-2">
               <a href="/" className="block text-gray-800 hover:text-gray-600">
                 Home
               </a>
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
-                About
-              </a>
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
-                Services
+              <a href="/blog" className="block text-gray-800 hover:text-gray-600">
+                News
               </a>
               <a href="#" className="block text-gray-800 hover:text-gray-600">
                 Contact

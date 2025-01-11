@@ -12,7 +12,7 @@ const Card = (props) => {
         height={300}
       />
       <div className="flex flex-col items-center">
-        <h1 className="text-xl">{title}</h1>
+        <h1 className="text-xl font-bold">{title}</h1>
         <p>
           {description.split("/").map((line, index) => (
             <span key={index}>
@@ -28,8 +28,8 @@ const Card = (props) => {
 
 export default function Section2() {
   return (
-    <section className="relative h-screen flex">
-      <div className="flex justify-between items-center h-fit gap-10 mx-auto">
+    <section className="relative h-auto flex">
+      <div className="flex flex-col md:flex-row justify-between items-center h-fit gap-10 mx-auto">
         <Card
           image="/rental_services.jpg"
           title="Rental Services"

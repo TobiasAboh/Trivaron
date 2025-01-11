@@ -8,7 +8,7 @@ export default function BlogContent() {
         <BlogCard
           title="How to grow your own organic produce"
           image="/cocoa4.jpg"
-          description="Learn how to grow your own organic produce using sustainable farming practices."
+          description="Explore our latest updates, insights and breackthroughs in agriculture and energy"
         />
         <BlogCard
           title="The future of renewable energy"
@@ -17,12 +17,12 @@ export default function BlogContent() {
         />
         <BlogCard
           title="How to grow your own organic produce"
-          image="/cocoa4.jpg"
-          description="Learn how to grow your own organic produce using sustainable farming practices."
+          image="/tree.jpg"
+          description="Discover the latest technologies reshaping the oil and gas industry"
         />
         <BlogCard
           title="The future of renewable energy"
-          image="/tractor.jpg"
+          image="/forrest2.jpg"
           description="Discover the latest developments in renewable energy and how they can benefit your business."
         />
       </div>

@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="px-5 py-1 mb-5 rounded-3xl bg-white w-fit bg-opacity-20">
           Agriculture
         </div>
-        <h1 className="font-bold font-sans text-2xl md:text-5xl mb-5 ">
+        <h1 className="font-bold font-sans text-2xl md:text-5xl mb-5">
           Cultivating the Future of
           <br />
           Farming{" "}

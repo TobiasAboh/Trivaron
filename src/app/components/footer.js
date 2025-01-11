@@ -76,13 +76,7 @@ export default function Footer() {
                 <a href="/" className="hover:text-green-400">
                   Home
                 </a>
-                <a href="#" className="hover:text-green-400">
-                  About
-                </a>
-                <a href="#" className="hover:text-green-400">
-                  Services
-                </a>
-                <a href="#" className="hover:text-green-400">
+                <a href="/blog" className="hover:text-green-400">
                   News
                 </a>
                 <a href="#" className="hover:text-green-400">

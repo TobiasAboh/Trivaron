@@ -8,7 +8,7 @@ export default function Section1() {
         <h1 className="text-black text-center font-bold text-5xl mt-10">
           A Little Bit <span className="text-blue-400">About Us</span>
         </h1>
-        <div className="flex flex-col items-center justify-center mt-6 text-center text-gray-500">
+        <div className="flex flex-col items-center justify-center mt-6 text-center text-sm md:text-lg text-gray-500">
           <p>
             We are experts in energy and agriculture, offering innovative
             solutions for the oil and gas
@@ -25,18 +25,22 @@ export default function Section1() {
           </p>
           <div className="flex gap-5 mt-6">
             <button className="bg-green-400 text-white font-bold py-2 px-6 rounded-full">
-              Request a quote
+              Contact us
             </button>
             <button>Learn more</button>
           </div>
         </div>
-        <Image
+        <picture>
+          <source srcSet="/leafdesign_mobile.jpg" media="(max-width: 640px)" />
+          <Image
           src="/leafdesign.jpg"
           alt="ornaments"
           width={1000}
           height={500}
           className="w-full bg-white mt-8"
         />
+        </picture>
+        
         <BlogSection />
         <h1 className="text-center font-bold text-2xl mt-28">Partners</h1>
         <Image
