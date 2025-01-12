@@ -45,7 +45,7 @@ const Grid = () => {
       <GridItem
         title="Irrigation Solutions"
         description="Our irrigation systems are designed to/optimize water usage, reducing waste/and promoting sustainable agriculture/practices."
-        image="/oilrig5.jpg"
+        image="/irrigationhose.jpg"
       />
     </div>
   );

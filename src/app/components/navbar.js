@@ -66,21 +66,16 @@ export default function Navbar() {
         )}
         <div className="hidden md:block">
           <ul className="flex space-x-4 lg:space-x-14">
-            <li className={pathname === "/" ? currentPageStyle : navStyle}>
-              <Link href="/" className={textStyle}>
+              <Link href="/" className={pathname === "/" ? currentPageStyle : navStyle}>
                 Home
               </Link>
-            </li>
-            <li className={pathname === "/blog" ? currentPageStyle : navStyle}>
-              <Link href="/blog" className={textStyle}>
+              <Link href="/blog" className={pathname === "/blog" ? currentPageStyle : navStyle}>
                 News
               </Link>
-            </li>
-            <li className={pathname === "/contact_us" ? currentPageStyle : navStyle}>
-              <Link href="/contact_us" className={textStyle}>
+
+              <Link href="/contact_us" className={pathname === "/contact_us" ? currentPageStyle : navStyle}>
                 Contact
               </Link>
-            </li>
           </ul>
         </div>
         <button className="hidden md:inline bg-black px-5 py-2 text-white rounded-3xl">

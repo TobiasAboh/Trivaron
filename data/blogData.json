@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "date": "2025-01-10",
+    "image": "/cocoa4.jpg",
+    "title": "How to grow your own organic produce",
+    "description": "Learn how to grow your own organic produce using sustainable farming practices.",
+    "slug": "first-blog-post"
+  },
+  {
+    "id": 2,
+    "date": "2025-01-09",
+    "image": "/tractor.jpg",
+    "title": "The future of renewable energy",
+    "description": "Discover the latest developments in renewable energy and how they can benefit your business.",
+    "content": "This is the content of the second blog post.",
+    "slug": "second-blog-post"
+  },
+  {
+    "id": 3,
+    "date": "2025-01-09",
+    "image": "/tree.jpg",
+    "title": "How to grow your own organic produce",
+    "description": "Discover the latest developments in renewable energy and how they can benefit your business.",
+    "content": "This is the content of the third blog post.",
+    "slug": "third-blog-post"
+  },
+  {
+    "id": 4,
+    "date": "2025-01-09",
+    "image": "/forrest2.jpg",
+    "title": "Innovations in Energy Solutions",
+    "description": "Discover the latest developments in renewable energy and how they can benefit your business.",
+    "content": "This is the content of the third blog post.",
+    "slug": "forth-blog-post"
+  }
+]

@@ -106,7 +106,7 @@ const Card = (props) => {
 export default function Home() {
   return (
     <>
-      <section className="relative h-screen pt-16 md:pt-36">
+      <section className="relative h-auto md:h-screen pt-16 md:pt-36">
         <picture className="bg-black">
           <source
             srcSet="/hero_mobile.png"
