@@ -1,10 +1,13 @@
 "use client";
-import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const navStyle = "rounded-full py-1 px-2 hover:bg-gray-300";
+  const navStyle = "rounded-full py-1 px-3 hover:bg-gray-300 text-sm";
+  const currentPageStyle = "bg-gray-200 rounded-full px-3 text-green-400 text-md font-bold";
   const textStyle = "text-black text-sm";
   return (
     <>
@@ -49,34 +52,34 @@ export default function Navbar() {
         {isOpen && (
           <div className="absolute w-full top-full right-0 md:hidden bg-white shadow-md">
             <div className="w-full space-y-2 px-4 py-2">
-              <a href="/" className="block text-gray-800 hover:text-gray-600">
+              <Link href="/" className="block text-gray-800 hover:text-gray-600">
                 Home
-              </a>
-              <a href="/blog" className="block text-gray-800 hover:text-gray-600">
+              </Link>
+              <Link href="/blog" className="block text-gray-800 hover:text-gray-600">
                 News
-              </a>
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
+              </Link>
+              <Link href="contact_us" className="block text-gray-800 hover:text-gray-600">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         )}
         <div className="hidden md:block">
           <ul className="flex space-x-4 lg:space-x-14">
-            <li className={navStyle}>
-              <a href="/" className={textStyle}>
+            <li className={pathname === "/" ? currentPageStyle : navStyle}>
+              <Link href="/" className={textStyle}>
                 Home
-              </a>
+              </Link>
             </li>
-            <li className={navStyle}>
-              <a href="/blog" className={textStyle}>
+            <li className={pathname === "/blog" ? currentPageStyle : navStyle}>
+              <Link href="/blog" className={textStyle}>
                 News
-              </a>
+              </Link>
             </li>
-            <li className={navStyle}>
-              <a href="/" className={textStyle}>
+            <li className={pathname === "/contact_us" ? currentPageStyle : navStyle}>
+              <Link href="/contact_us" className={textStyle}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

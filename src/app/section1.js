@@ -1,9 +1,18 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 import BlogSection from "./components/blogsection";
 
 export default function Section1() {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/contact_us");
+  };
+
   return (
-    <section className="relative h-auto w-screen">
+    <section className="relative h-auto">
       <div className="bg-white pt-20">
         <h1 className="text-black text-center font-bold text-5xl mt-10">
           A Little Bit <span className="text-blue-400">About Us</span>
@@ -24,7 +33,7 @@ export default function Section1() {
             sustainable future</span>
           </p>
           <div className="flex gap-5 mt-6">
-            <button className="bg-green-400 text-white font-bold py-2 px-6 rounded-full">
+            <button onClick={handleNavigate} className="bg-green-400 text-white font-bold py-2 px-6 rounded-full hover:bg-green-500">
               Contact us
             </button>
             <button>Learn more</button>

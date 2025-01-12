@@ -1,43 +1,48 @@
 "use client";
 import Image from "next/image";
-import { use } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
   return (
     <footer className="relative z-10 w-full">
-      <div className="relative flex justify-center items-center h-auto md:h-screen">
-        <picture>
-          <source srcSet="/crops_mobile.png" media="(max-width: 640px)" />
-          <Image
-            src="/crops.png"
-            alt="crops"
-            fill
-            className="w-full h-auto bg-black"
-          />
-        </picture>
-
-        <div className="relative">
-          <h1 className=" flex flex-col items-center mt-36 md:mt-0 text-white font-bold text-xl md:text-5xl">
-            Reach out to Trivaron today <span>to be part of the change</span>
-          </h1>
-          <p className="flex flex-col mx-auto text-center items-center text-md md:text-lg text-gray-200 mt-6">
-            Join us in fostering a sustainable future in agriculture. Whether
-            you are a supplier,
-            <br className="hidden md:block" />
-            <br className="block md:hidden" />
-            partner, or supporter, we're excited<br className="block md:hidden" />{" "}to connect with you
-          </p>
-          <button className="flex items-center mb-36 md:mb-0 gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10">
+      {pathname !== "/contact_us" && (
+        <div className="relative flex justify-center items-center h-auto md:h-screen">
+          <picture>
+            <source srcSet="/crops_mobile.png" media="(max-width: 640px)" />
             <Image
-              src="/requestqoute.png"
-              alt="request quote"
-              width={20}
-              height={20}
+              src="/crops.png"
+              alt="crops"
+              fill
+              className="w-full h-auto bg-black"
             />
-            Contact Us
-          </button>
+          </picture>
+
+          <div className="relative">
+            <h1 className=" flex flex-col items-center mt-36 md:mt-0 text-white font-bold text-xl md:text-5xl">
+              Reach out to Trivaron today <span>to be part of the change</span>
+            </h1>
+            <p className="flex flex-col mx-auto text-center items-center text-md md:text-lg text-gray-200 mt-6">
+              Join us in fostering a sustainable future in agriculture. Whether
+              you are a supplier,
+              <br className="hidden md:block" />
+              <br className="block md:hidden" />
+              partner, or supporter, we're excited
+              <br className="block md:hidden" /> to connect with you
+            </p>
+            <button className="flex items-center mb-36 md:mb-0 gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10">
+              <Image
+                src="/requestqoute.png"
+                alt="request quote"
+                width={20}
+                height={20}
+              />
+              Contact Us
+            </button>
+          </div>
         </div>
-      </div>
+      )}
       <div className="relative h-auto md:h-screen bg-black md:pl-20 pb-32 md:pb-0">
         <div className="container mx-auto pt-6 md:pt-24">
           <div className="w-full flex flex-col items-start justify-center md:flex-row md:justify-start text-white text-sm gap-20">
@@ -73,15 +78,15 @@ export default function Footer() {
                 <p className="pb-3 border-b-2 border-white-300 text-gray-300">
                   Quick Links
                 </p>
-                <a href="/" className="hover:text-green-400">
+                <Link href="/" className="hover:text-green-400">
                   Home
-                </a>
-                <a href="/blog" className="hover:text-green-400">
+                </Link>
+                <Link href="/blog" className="hover:text-green-400">
                   News
-                </a>
-                <a href="#" className="hover:text-green-400">
+                </Link>
+                <Link href="/contact_us" className="hover:text-green-400">
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
