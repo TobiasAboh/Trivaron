@@ -1,19 +1,22 @@
 import blogData from "../../data/blogData.json";
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
-import Layout from "../../components/Layout";
 
 export default function BlogPost({ blog }) {
   return (
-    <Layout>
       <div>
         <h1>{blog.title}</h1>
         <p>
           <strong>Date:</strong> {blog.date}
         </p>
-        <p>{blog.content}</p>
+        <p>{blog.content.split("/").map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+            </span>
+          ))}</p>
       </div>
-    </Layout>
+
   );
 }
 
@@ -23,7 +26,7 @@ export async function getStaticPaths() {
     params: { slug: post.slug },
   }));
 
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 // Runs during build for each path to fetch the blog data

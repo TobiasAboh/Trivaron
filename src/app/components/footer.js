@@ -2,9 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
+  const router = useRouter();
+  const handleNavigate = () => {
+    router.push("/contact_us");
+  };
   return (
     <footer className="relative z-10 w-full">
       {pathname !== "/contact_us" && (
@@ -31,7 +36,7 @@ export default function Footer() {
               partner, or supporter, we're excited
               <br className="block md:hidden" /> to connect with you
             </p>
-            <button className="flex items-center mb-36 md:mb-0 gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10">
+            <button onClick={handleNavigate} className="flex items-center mb-36 md:mb-0 gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10">
               <Image
                 src="/requestqoute.png"
                 alt="request quote"
@@ -46,13 +51,15 @@ export default function Footer() {
       <div className="relative h-auto md:h-screen bg-black md:pl-20 pb-32 md:pb-0">
         <div className="container mx-auto pt-6 md:pt-24">
           <div className="w-full flex flex-col items-start justify-center md:flex-row md:justify-start text-white text-sm gap-20">
-            <Image
-              src="/trivaronlogo3.png"
-              alt="logo"
-              width={200}
-              height={200}
-              // className="ml-32"
-            />
+            <Link href="/">
+              <Image
+                src="/trivaronlogo3.png"
+                alt="logo"
+                width={200}
+                height={200}
+                // className="ml-32"
+              />
+            </Link>
             <div className="grid grid-cols-2 mx-6 gap-x-10 gap-y-20 md:mx-0 md:grid-cols-3 md:gap-36">
               <div className="flex flex-col space-y-2">
                 <p className="pb-3 border-b-2 border-gray-300 text-gray-300">
@@ -71,7 +78,7 @@ export default function Footer() {
                 <p className="pb-3 border-b-2 border-gray-300 text-gray-300">
                   Address
                 </p>
-                <p>No 8, Off Glover Road Ikoyi</p>
+                <p>6b Layi Yussuf crescent,<br/>lekki 1.</p>
                 {/* <a href="#">Ikoyi</a> */}
               </div>
               <div className="flex flex-col space-y-2">
@@ -98,10 +105,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-2">
             <p>Follow Us</p>
             <div className="flex gap-5 md:gap-2">
-              <a href="#" target="_blank">
+              <a href="https://x.com/trivaron?t=EZdyAUusmm5_Ydog8s3G5A&s=08 " target="_blank">
                 <img src="twitter.svg" alt="twitter" width={15} height={15} />
               </a>
-              <a href="#" target="_blank">
+              <a href="https://www.instagram.com/trivaronn?igsh=eWcwdDNjb2Ewcjl3" target="_blank">
                 <img
                   src="instagram.svg"
                   alt="instagram"

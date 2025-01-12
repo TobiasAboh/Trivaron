@@ -1,6 +1,13 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Section2() {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/contact_us");
+  };
   return (
     <section className="h-auto px-6 md:px-0">
       <div className="flex flex-col md:flex-row justify-around gap-18">
@@ -40,14 +47,14 @@ export default function Section2() {
             <br />
             meet the unique needs of our clients.
           </p>
-          <button className="w-fit px-6 py-2 mt-6 text-lg font-medium text-white bg-black rounded-2xl hover:bg-gray-600">
+          <button onClick={handleNavigate} className="w-fit px-6 py-2 mt-6 text-lg font-medium text-white bg-black rounded-2xl hover:bg-gray-600">
             <div className="flex flex-row gap-5 items-center">
               <img
                 src="/requestqoute.png"
                 alt="request quote"
                 className="w-6 h-6"
               />
-              Request quote
+              Contact us
             </div>
           </button>
         </div>

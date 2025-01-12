@@ -1,6 +1,12 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function HeroSection() {
+  const router = useRouter();
+  const handleNavigate = () => {
+    router.push("/contact_us");
+  };
   return (
     <section className="relative h-full pt-32 pb-52 md:py-0 md:h-screen">
       <picture>
@@ -22,14 +28,14 @@ export default function HeroSection() {
           <br />
           and energy.
         </p>
-        <button className="w-fit px-6 py-2 mt-12 text-lg font-medium text-black bg-white rounded-2xl hover:bg-gray-200">
+        <button onClick={handleNavigate} className="w-fit px-6 py-2 mt-12 text-lg font-medium text-black bg-white rounded-2xl hover:bg-gray-200">
           <div className="flex flex-row gap-5 items-center">
             <img
               src="/requestquoteblack.svg"
               alt="request quote"
               className="w-6 h-6"
             />
-            Request quote
+            Contact us
           </div>
         </button>
       </div>

@@ -36,7 +36,7 @@ export default function Section1() {
             <button onClick={handleNavigate} className="bg-green-400 text-white font-bold py-2 px-6 rounded-full hover:bg-green-500">
               Contact us
             </button>
-            <button>Learn more</button>
+            {/* <button>Learn more</button> */}
           </div>
         </div>
         <picture>

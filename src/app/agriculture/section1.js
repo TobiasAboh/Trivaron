@@ -7,11 +7,11 @@ export default function Section1() {
       <Image src="/stats.jpg" alt="stats" fill />
       <div className="relative z-10 flex flex-col md:flex-row gap-24 justify-center items-center pt-28 md:pt-44">
         <div className="flex flex-col gap-4 justify-center items-center">
-          <h1 className="text-3xl font-bold text-green-500">800+</h1>
-          <p className="text-gray-500">Acres of farmland cultivated</p>
+          <h1 className="text-3xl font-bold text-green-500">500</h1>
+          <p className="text-gray-500">Hectares of farmland cultivated</p>
         </div>
         <div className="flex flex-col gap-4 justify-center items-center text-center">
-          <h1 className="text-3xl font-bold text-green-500">220</h1>
+          <h1 className="text-3xl font-bold text-green-500">240</h1>
           <p className="text-gray-500">
             Acres dedicated to cocoa cultivation in the
             <br />
