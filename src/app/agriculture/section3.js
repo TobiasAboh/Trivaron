@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Section3() {
   return (
-    <section className="relative h-auto flex px-6 md:px-0">
+    <section className="relative h-auto flex px-6">
       <div className="flex flex-col-reverse items-center md:items-center md:flex-row md:justify-center space-x-0 gap-y-10 md:gap-y-6 md:space-x-6 my-20 mx-auto">
         <div className="flex flex-col justify-end">
           <Image
@@ -20,7 +20,7 @@ export default function Section3() {
             </h1>
             <p className="text-sm text-gray-200">
               As a commodities exporter, we specialize in cocoa production,
-              <br className="hidden md:block" /> processing and exportation, with a strong focus on social
+              <br className="hidden md:block" /> processing and exportation, with a<br className="block md:hidden" /> strong focus on social
               <br className="hidden md:block" />{" "}
               responsibility.
             </p>
@@ -44,7 +44,7 @@ export default function Section3() {
 
             <div className="absolute text-white pb-4 pl-4 md:pl-5 space-y-4">
               <h1 className="text-3xl font-bold">The Farm</h1>
-              <p className="text-sm text-gray-200">
+              <p className="text-xs lg:text-sm text-gray-200">
                 The symbol of excellence nestled on a <br className="block md:hidden"/>500-hectare
                 <br className="hidden md:block" />
                 {" "}Arable land in Ibadan, Southwest Nigeria. Trivaron's

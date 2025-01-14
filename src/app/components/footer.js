@@ -6,6 +6,18 @@ import { useRouter } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
+  const footerImage =
+    pathname === "/energy"
+      ? "/oilrig2.png"
+      : pathname === "/real_estate"
+      ? "/duplex.png"
+      : "/crops.png";
+  const footerImageMobile =
+    pathname === "/energy"
+      ? "/oilrig2_mobile.png"
+      : pathname === "/real_estate"
+      ? "/duplex_mobile.png"
+      : "/crops_mobile.png";
   const router = useRouter();
   const handleNavigate = () => {
     router.push("/contact_us");
@@ -15,9 +27,9 @@ export default function Footer() {
       {pathname !== "/contact_us" && (
         <div className="relative flex justify-center items-center h-auto md:h-screen">
           <picture>
-            <source srcSet="/crops_mobile.png" media="(max-width: 640px)" />
+            <source srcSet={footerImageMobile} media="(max-width: 640px)" />
             <Image
-              src="/crops.png"
+              src={footerImage}
               alt="crops"
               fill
               className="w-full h-auto bg-black"
@@ -36,7 +48,10 @@ export default function Footer() {
               partner, or supporter, we're excited
               <br className="block md:hidden" /> to connect with you
             </p>
-            <button onClick={handleNavigate} className="flex items-center mb-36 md:mb-0 gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10">
+            <button
+              onClick={handleNavigate}
+              className="flex items-center mb-36 md:mb-0 gap-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full items-center mx-auto mt-10"
+            >
               <Image
                 src="/requestqoute.png"
                 alt="request quote"
@@ -57,29 +72,35 @@ export default function Footer() {
                 alt="logo"
                 width={200}
                 height={200}
-                // className="ml-32"
               />
             </Link>
-            <div className="grid grid-cols-2 mx-6 gap-x-10 gap-y-20 md:mx-0 md:grid-cols-3 md:gap-36">
+            <div className="grid grid-cols-2 mx-6 gap-x-10 gap-y-20 md:mx-0 md:grid-cols-3 md:gap-36 text-xs lg:text-sm">
               <div className="flex flex-col space-y-2">
                 <p className="pb-3 border-b-2 border-gray-300 text-gray-300">
                   Contact info
                 </p>
                 <div className="flex space-x-2">
                   <img src="/Phone.svg" alt="phone" width={15} height={15} />
-                  <p>080 370 06763</p>
+                  <p>+234 803 700 6763</p>
                 </div>
                 <div className="flex space-x-2">
                   <img src="/Phone.svg" alt="phone" width={15} height={15} />
-                  <p>080 605 80275</p>
+                  <p>+234 806 058 0275</p>
+                </div>
+                <div className="flex space-x-2">
+                  <img src="/Phone.svg" alt="phone" width={15} height={15} />
+                  <p>+44 794 784 3736</p>
                 </div>
               </div>
               <div className="flex flex-col space-y-2">
                 <p className="pb-3 border-b-2 border-gray-300 text-gray-300">
                   Address
                 </p>
-                <p>6b Layi Yussuf crescent,<br/>lekki 1.</p>
-                {/* <a href="#">Ikoyi</a> */}
+                <p>
+                  6b Layi Yussuf crescent,
+                  <br />
+                  lekki 1.
+                </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <p className="pb-3 border-b-2 border-white-300 text-gray-300">
@@ -99,16 +120,22 @@ export default function Footer() {
           </div>
         </div>
         <div className=" flex flex-col-reverse items-start mx-auto md:flex-row md:justify-between mt-20 pt-2  w-5/6 md:ml-20 border-t-2 border-gray-300 text-gray-300">
-          <p className="mt-2 md:mt-0">
+          <p className="mt-2 md:mt-0 text-xs md:text-sm">
             Copyrights@ 2025 Trivaron. All rights reserved
           </p>
           <div className="flex flex-col md:flex-row items-center gap-2">
             <p>Follow Us</p>
             <div className="flex gap-5 md:gap-2">
-              <a href="https://x.com/trivaron?t=EZdyAUusmm5_Ydog8s3G5A&s=08 " target="_blank">
+              <a
+                href="https://x.com/trivaron?t=EZdyAUusmm5_Ydog8s3G5A&s=08 "
+                target="_blank"
+              >
                 <img src="twitter.svg" alt="twitter" width={15} height={15} />
               </a>
-              <a href="https://www.instagram.com/trivaronn?igsh=eWcwdDNjb2Ewcjl3" target="_blank">
+              <a
+                href="https://www.instagram.com/trivaronn?igsh=eWcwdDNjb2Ewcjl3"
+                target="_blank"
+              >
                 <img
                   src="instagram.svg"
                   alt="instagram"
@@ -123,7 +150,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </footer>
   );
 }

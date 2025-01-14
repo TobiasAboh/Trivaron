@@ -5,11 +5,6 @@ import Section2 from "./section2";
 import Section3 from "./section3";
 import Section4 from "./section4";
 import Section5 from "./section5";
-import BlogSection from "../components/blogsection";
-
-
-
-
 
 export default function Agriculture() {
   return (
@@ -19,7 +14,6 @@ export default function Agriculture() {
       <Section2 />
       <Section3 />
       <Section4 />
-      <BlogSection />
       <Section5 />
     </>
   );

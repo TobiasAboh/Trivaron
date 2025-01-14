@@ -25,7 +25,6 @@ export default function HeroSection() {
             className="font-bold font-sans text-2xl md:text-5xl mb-10
             text-green-400"
           >
-            {/* <br className="hidden md:block" /> */}
             One Acre at a Time
           </span>
         </h1>

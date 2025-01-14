@@ -11,13 +11,6 @@ const Card = (props) => {
       className="flex flex-col relative justify-end bg-cover w-48 h-32 md:w-28 md:h-28 rounded-2xl text-white p-2 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:scale-105"
       style={{ backgroundImage: image }}
     >
-      <Image
-        src="/redirecticon.png"
-        className="absolute top-2 sm:top-2 right-2 sm:right-2"
-        alt="visit"
-        width={30}
-        height={30}
-      />
       {title}
     </a>
   );
@@ -27,28 +20,26 @@ export default function Home() {
   return (
     <>
       <section className="relative h-auto md:h-screen pt-16 md:pt-36">
-        {/* <div className="h-full w-full"> */}
-          <picture className="bg-black w-full h-full">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-green-300 via-green-300 to-white opacity-70">
+          <picture className="hidden md:block absolute bottom-0 z-10 bg-black w-full bg-gradient-to-b from-green-300 via- to-white opacity-90">
             <source
-              srcSet="/hero_mobile.png"
+              srcSet="/Trivaron_mobile.png"
               media="(max-width: 640px)"
-              className="bg-black"
+              className=""
             />
             <Image
-              src="/herofixed.jpg"
+              src="/Trivaron.png"
               alt="hero"
-              fill
+              width={1000}
+              height={500}
               priority
-              className="rounded-b-3xl"
-              // layout="fill"
-              // objectFit="cover"
+              className="rounded-b-3xl w-full h-5/6"
             />
           </picture>
-        {/* </div> */}
-
-        <div className=" absolute flex flex-col items-center md:items-start lg:ml-36 relative z-10">
+        </div>
+      
+        <div className="absolute flex flex-col items-center md:items-start lg:ml-36 relative z-10">
           <picture>
-            {/* <source srcSet="/trivaronlogo4.png" media="(max-width: 640px)" /> */}
             <Image
               className="pb-5"
               src="/trivaronlogo2.png"
@@ -59,7 +50,7 @@ export default function Home() {
           </picture>
 
           <h1 className="text-xl mb-5 font-bold">
-            Growing <span className="text-green-400">Tomorrow</span> Today
+            Growing <span className="text-green-600">Tomorrow</span> Today
           </h1>
           <div className="flex flex-col md:flex-row gap-4 pb-10">
             <Card title="Agriculture" image="url('/cocoa.png')" />

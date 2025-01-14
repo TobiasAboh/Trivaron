@@ -15,7 +15,7 @@ export default function Section1() {
     <section className="relative h-auto">
       <div className="bg-white pt-20">
         <h1 className="text-black text-center font-bold text-5xl mt-10">
-          A Little Bit <span className="text-blue-400">About Us</span>
+          A Little Bit <span className="text-green-400">About Us</span>
         </h1>
         <div className="flex flex-col items-center justify-center mt-6 text-center text-sm md:text-lg text-gray-500">
           <p>

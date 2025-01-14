@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   const businessEmail = "info@trivaron.com";
@@ -29,13 +31,21 @@ export default function Contact() {
         <div className="flex gap-6 bg-black p-5 rounded-2xl mt-8 opacity-80 text-start text-xs md:text-lg">
           <div className="flex flex-col space-y-2">
             <p className="pb-3 border-b-2 border-gray-300">Contact info</p>
-            <div className="flex space-x-2">
-              <img src="/Phone.svg" alt="phone" width={15} height={15} />
-              <p>080 370 06763</p>
+            <div className="flex space-x-2 items-center">
+              <FontAwesomeIcon icon={faEnvelope} className="text-green-500" />
+              <p>contact@trivaron.com</p>
             </div>
             <div className="flex space-x-2">
               <img src="/Phone.svg" alt="phone" width={15} height={15} />
-              <p>080 605 80275</p>
+              <p>+234 803 700 6763</p>
+            </div>
+            <div className="flex space-x-2">
+              <img src="/Phone.svg" alt="phone" width={15} height={15} />
+              <p>+234 806 058 0275</p>
+            </div>
+            <div className="flex space-x-2">
+              <img src="/Phone.svg" alt="phone" width={15} height={15} />
+              <p>+44 794 784 3736</p>
             </div>
           </div>
           <div className="flex flex-col space-y-2">
@@ -45,7 +55,6 @@ export default function Contact() {
               <br />
               lekki 1.
             </p>
-            {/* <a href="#">Ikoyi</a> */}
           </div>
         </div>
         <button

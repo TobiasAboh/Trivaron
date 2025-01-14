@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Section1() {
   return (
     <section className="relative h-auto flex px-6 md:px-0 pt-16 md:pt-36">
-      <div className="flex flex-col-reverse md:flex-col justify-center items-center mx-auto gap-12 md:gap-20">
+      <div className="flex flex-col-reverse md:flex-col justify-center items-center mx-auto gap-12  mb-12 md:mb-0 md:gap-20">
         <div className="flex flex-col items-center md:flex-row gap-6 md:gap-36 w-fit">
           <h1 className="text-black font-bold text-2xl md:text-5xl">
             Our Expertise in <br className="hidden md:block" />
@@ -17,8 +17,8 @@ export default function Section1() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-between mt-0 md:mt-10 w-full gap-10 md:mb-48">
-            <Image src="/house1.jpg" alt="house" width={500} height={300} />
-            <Image src="/house2.jpg" alt="house" width={500} height={300} />
+            <Image src="/customBuilding.png" alt="house" width={500} height={300} className="rounded-3xl"/>
+            <Image src="/customBuilding2.png" alt="house" width={500} height={300} className="rounded-3xl"/>
         </div>
       </div>
     </section>
