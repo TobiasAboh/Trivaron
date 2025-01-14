@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
-  const businessEmail = "info@trivaron.com";
+  const businessEmail = "contact@trivaron.com";
   const subject = ""; // Optional, leave empty if not needed
   const body = "";
   const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${businessEmail}&su=${encodeURIComponent(
@@ -58,7 +58,7 @@ export default function Contact() {
           </div>
         </div>
         <button
-          onClick={() => window.location.href = gmailLink}
+          onClick={() => (window.location.href = gmailLink)}
           className="w-fit px-6 py-2 text-sm md:text-lg mt-6 font-medium text-black bg-white rounded-2xl hover:bg-gray-200"
         >
           <div className="flex flex-row gap-5 items-center">

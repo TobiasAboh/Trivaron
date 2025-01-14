@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -79,6 +81,13 @@ export default function Footer() {
                 <p className="pb-3 border-b-2 border-gray-300 text-gray-300">
                   Contact info
                 </p>
+                <div className="flex space-x-2 items-center">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="text-green-500"
+                  />
+                  <p>contact@trivaron.com</p>
+                </div>
                 <div className="flex space-x-2">
                   <img src="/Phone.svg" alt="phone" width={15} height={15} />
                   <p>+234 803 700 6763</p>
