@@ -17,10 +17,7 @@ export default function Section4() {
 
         <div className="relative w-full h-1/2 py-36">
           <picture>
-            <source
-              srcSet="/waterSource.png"
-              media="(max-width: 640px)"
-            />
+            <source srcSet="/waterSource.png" media="(max-width: 640px)" />
             <Image
               src="/waterSource.png"
               alt="dam"
@@ -38,7 +35,7 @@ export default function Section4() {
               Trivaron's state-of-the-art farm infrastructure, includes a<br />
               1-mile long and a 45-feet deep irrigation dam, valued at
               <br />
-              $2 million, ensure optimal crop yields while minimizing
+              $2 million, ensuring optimal crop yields while minimizing
               <br />
               environment impact.
             </p>
