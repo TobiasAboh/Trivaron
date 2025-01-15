@@ -84,13 +84,13 @@ export default function Section2() {
         <div className="border-2 border-gray-300 rounded-3xl shadow-2xl p-5 md:p-10">
           {/* <Image src="/services.jpg" alt="forrest" width={400} height={500} /> */}
           <ul className="text-md md:text-3xl space-y-2">
-            <li>- Cocoa plantation management</li>
+            <li>- Cocoa Export</li>
             <li>- Farm mapping</li>
             <li>- Input distribution</li>
             <li>- Field monitoring</li>
             <li>- Harvesting</li>
             <li>- Inventory management</li>
-            <li>- Cocoa Export</li>
+            <li>- Cocoa plantation management</li>
           </ul>
         </div>
         <div className="space-y-4">

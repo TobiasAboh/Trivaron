@@ -6,23 +6,23 @@ export default function Section3() {
       <div className="flex flex-col-reverse md:flex-row gap-10 mx-auto">
         <div className="flex flex-col justify-end w-full md:w-5/6">
           <Image
-            src="/town.jpg"
+            src="/siteplan.png"
             alt="house"
             width={500}
             height={300}
-            className="w-full h-full rounded-3xl"
+            className="w-full h-full rounded-3xl mb-10"
           />
-          <div className="absolute text-white pb-4 pl-4 pr-2 md:pr-0 md:pl-6 space-y-6">
-            <h1 className="text-xl md:text-3xl font-bold">Expert Guidance</h1>
-            <p className="text-sm">
-              Our team of seasoned professionals ensures you
-              <br className="hidden md:block" /> make informed decisions every
-              step of <br className="block md:hidden" /> the way
-            </p>
-          </div>
+          <p>
+            We are in the process of implementing our first Luxury Homes project
+            in
+            <br className="hidden md:block" /> Iyaganku, Ibadan; on an 11,000
+            SQM land in the heart of one of the most
+            <br className="hidden md:block" /> sought after areas in Ibadan, Oyo
+            state called Iyaganku G.R.A.
+          </p>
         </div>
 
-        <div className="flex flex-col gap-10 md:justify-between">
+        <div className="flex flex-col gap-10 md:justify-start">
           <div className="flex flex-col justify-end">
             <Image
               src="/apartments.jpg"

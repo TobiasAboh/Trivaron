@@ -42,11 +42,11 @@ export default function Footer() {
             <h1 className=" flex flex-col items-center mt-36 md:mt-0 text-white font-bold text-xl md:text-5xl">
               Reach out to Trivaron today <span>to be part of the change</span>
             </h1>
-            <p className="flex flex-col mx-auto text-center items-center text-md md:text-lg text-gray-200 mt-6">
-              Join us in fostering a sustainable future in agriculture. Whether
-              you are a supplier,
+            <p className="flex flex-col mx-auto text-center items-center text-sm md:text-lg text-gray-200 mt-6">
+              Join us in fostering a sustainable future. Whether you are a
+              supplier,
               <br className="hidden md:block" />
-              <br className="block md:hidden" />
+              {/* <br className="block md:hidden" /> */}
               partner, or supporter, we're excited
               <br className="block md:hidden" /> to connect with you
             </p>

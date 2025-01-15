@@ -32,18 +32,18 @@ export default function Section2() {
       <div className="flex flex-col md:flex-row justify-between items-center h-fit gap-10 mx-auto">
         <Card
           image="/customBuilding5.png"
-          title="Rental Services"
-          description="Browse a range of rental options to suit/your needs."
+          title="3 Bedroom Apartments"
+          description="This is our luxurious and tastefully designed/ 3 bedroom apartment."
         />
         <Card
           image="/customBuilding4.png"
-          title="Property Valuation"
-          description="Know the true worth of your property/with our accurate assessments"
+          title="Terraces"
+          description="This is our luxurious and tastefully designed/ 4 bedroom terrace"
         />
         <Card
           image="/customBuilding3.png"
-          title="Selling Your Property"
-          description="Get the best value with our expert/marketing and negotiation strategies."
+          title="4 Bedroom Stand Alone"
+          description="This is our luxurious and tastefully designed/ 4 bedroom stand alone home."
         />
       </div>
     </section>
