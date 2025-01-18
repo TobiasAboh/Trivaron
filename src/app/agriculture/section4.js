@@ -6,7 +6,7 @@ export default function Section4() {
       <div className="flex flex-col justify-center items-center md:items-stretch md:justify-center">
         <div className="block md:hidden space-y-10 pl-6">
           <h1 className="text-4xl font-bold">
-            Our <span className="text-green-400">Irrigation Dam</span>
+            Our <span className="text-green-400">Irrigation System</span>
           </h1>
           <p className="">
             Trivaron's state-of-the-art farm infrastructure, includes a 1-mile

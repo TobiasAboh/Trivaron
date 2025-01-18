@@ -8,7 +8,7 @@ const Card = (props) => {
   return (
     <a
       href={`/${title.toLowerCase().replaceAll(" ", "_")}`}
-      className="flex flex-col relative justify-end bg-cover w-48 h-32 md:w-28 md:h-28 rounded-2xl text-white p-2 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:scale-105"
+      className="flex flex-col relative justify-end bg-cover w-48 h-32 md:w-36 md:h-36 rounded-2xl text-white p-2 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:scale-105"
       style={{ backgroundImage: image }}
     >
       {title}
